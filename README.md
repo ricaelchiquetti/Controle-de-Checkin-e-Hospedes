@@ -11,7 +11,7 @@ Este projeto consiste em um sistema de controle de check-ins e hóspedes para um
 
 1. **Clonando o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/ricaelchiquetti/Controle-de-Checkin-e-Hospedes
 
 1. **Instalando as dependências:**   
    ```bash
