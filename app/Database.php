@@ -12,6 +12,7 @@ use mysqli;
  */
 class Database {
 
+    //teoricamente colocar no CONFIG.php
     const
         SERVER = "localhost",
         USER = "root",

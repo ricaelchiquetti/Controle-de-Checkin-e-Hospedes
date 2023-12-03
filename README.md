@@ -1,42 +1,47 @@
-# Projeto Hotel
+# Projeto de Controle de Check-in e Hóspedes
 
-Este repositório contém um conjunto de classes relacionadas a um sistema de gestão de um hotel, incluindo modelos, controladores e serviços para lidar com informações de hóspedes, check-ins e outras funcionalidades.
+Este projeto consiste em um sistema de controle de check-ins e hóspedes para um hotel. Ele oferece funcionalidades para criar, atualizar, listar e excluir check-ins e hóspedes.
+
+## Pré-requisitos
+
+- PHP >= 8.0
+- Composer instalado para gerenciamento de dependências
+
+## Instalação
+
+1. **Clonando o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-projeto.git
+
+1. **Instalando as dependências:**   
+   ```bash
+   composer install
+Certifique-se de ter o Composer instalado no seu sistema. Se não tiver, você pode obtê-lo em getcomposer.org.
+
+## Configuração do banco de dados
+
+1. **Credenciais do Banco de Dados:**
+   - Preencha as credenciais do banco de dados no arquivo `.env`.
+   - Certifique-se de ter um banco de dados criado para o projeto.
+
+2. **Migrações do Banco de Dados:**
+   - Execute as migrações para criar as tabelas necessárias:
+     ```bash
+     php migration.php
+     ```
 
 ## Estrutura do Projeto
 
-O projeto está organizado em diversas classes para separação de responsabilidades:
-
-### Models
-
-- **Hospede.php**: Representa as informações dos hóspedes, incluindo nome, documento e telefone.
-- **Checkin.php**: Representa as informações dos check-ins, incluindo datas de entrada e saída, informações do hóspede associado e detalhes do check-in.
-
-### Controllers
-
-- **HospedeController.php**: Controla as operações relacionadas aos hóspedes, como buscar, criar, atualizar e deletar informações.
-- **CheckinController.php**: Controla as operações relacionadas aos check-ins, incluindo a manipulação das datas de entrada e saída.
-
-### Services
-
-- **ModelDataService.php**: Um serviço genérico para manipulação de dados dos modelos. Utilizado para executar operações de CRUD nos modelos Hospede e Checkin.
-
-## Funcionalidades Principais
-
-### Hospede
-
-O modelo `Hospede` lida com informações básicas dos hóspedes do hotel, incluindo nome, documento e telefone. O `HospedeController` oferece funcionalidades para gerenciar essas informações, como criar, atualizar, buscar e deletar hóspedes.
-
-### Checkin
-
-O modelo `Checkin` está associado aos registros de entrada e saída dos hóspedes. O `CheckinController` permite manipular esses registros, incluindo a gestão das datas de entrada e saída.
+- `/app`: Contém os controllers e modelos do projeto.
+- `/vendor`: Dependências gerenciadas pelo Composer.
+- `migration.php`: Arquivo para execução de migrações do banco de dados.
+- `composer.json`: Arquivo de configuração do Composer.
 
 ## Uso
 
-- Instruções sobre como usar as classes e métodos principais.
-- Dependências necessárias para rodar o projeto.
+### Exemplo de Uso
 
-## Licença
+Um exemplo básico de como usar o sistema:
 
-Este projeto está licenciado sob a [sua licença].
-
----
+```php
+// Exemplo de código
