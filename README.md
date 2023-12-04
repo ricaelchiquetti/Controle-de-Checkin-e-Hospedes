@@ -37,11 +37,3 @@ Certifique-se de ter o Composer instalado no seu sistema. Se não tiver, você p
 - `migration.php`: Arquivo para execução de migrações do banco de dados.
 - `composer.json`: Arquivo de configuração do Composer.
 
-## Uso
-
-### Exemplo de Uso
-
-Um exemplo básico de como usar o sistema:
-
-```php
-// Exemplo de código
